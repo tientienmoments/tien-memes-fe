@@ -58,13 +58,13 @@ const SideMenu = () => {
   };
 
   return (
-    <Nav className="col-md-3 d-md-block bg-light sidebar collapse">
+    <Nav className="col-md-3 d-md-block sidebar collapse">
       <div className="sidebar-sticky pt-3">
         <Form onSubmit={handleFormSubmit}>
           {texts.map(
             ({ id, content, color, size, alignmentX, alignmentY }, index) => (
               <div key={id}>
-                <h6 className="sidebar-heading px-3 mt-4 mb-1 text-muted">
+                <h6 className="sidebar-heading px-3 mt-4 mb-1">
                   <span>TEXT {index + 1}</span>
                 </h6>
                 <Form.Group as={Row} className="px-2 mb-1">
@@ -187,9 +187,9 @@ const SideMenu = () => {
             )
           )}
           <Button
-            className="btn-block"
+            className="btn-block tien-button"
             type="submit"
-            variant="primary"
+
             disabled={!selectedMeme?.id || loading}
           >
             Submit

@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const NavbarHeader = () => {
   return (
     <Navbar
-      bg="primary"
-      variant="dark"
+
+
       expand="md"
       className="sticky-top p-0 shadow"
     >

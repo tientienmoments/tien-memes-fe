@@ -27,7 +27,7 @@ const HomePage = () => {
   };
 
   return (
-    <Container className="fill d-flex justify-content-center align-items-center">
+    <Container className="fill d-flex justify-content-center align-items-center tien-page">
       {selectedMeme && (
         <div
           className="content-overley"
@@ -82,7 +82,7 @@ const HomePage = () => {
               accept="image/png, image/jpeg"
               id="local-meme"
             />
-            or <span className="import-image-label-text">upload an image</span>.
+            or <span className="import-image-label-text tien-text">upload an image</span>.
           </label>
         </p>
       )}
